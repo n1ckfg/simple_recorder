@@ -13,10 +13,12 @@ try:
         filename = f"video_{timestamp}.h264"
 
         camera.start_recording(filename)
+        print("Begin recording " + filename + " ...")
 
         camera.wait_recording(60)
 
         camera.stop_recording()
+        print("... End recording " + filename + "\n")
 
 except KeyboardInterrupt:
     camera.stop_recording()
