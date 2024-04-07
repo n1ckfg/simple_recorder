@@ -10,7 +10,7 @@ camera = picamera.PiCamera(resolution=resolution, framerate=framerate)
 try:
     while True:
         timestamp = time.strftime("%Y%m%d-%H%M%S")
-        filename = f"video_{timestamp}.h264"
+        filename = f"video_{timestamp}.mp4"
 
         camera.start_recording(filename)
         print("Begin recording " + filename + " ...")
