@@ -11,7 +11,7 @@ camera = picamera.PiCamera(resolution=resolution, framerate=framerate)
 # Set ISO to the desired value
 camera.iso = 400
 # Wait for the automatic gain control to settle
-sleep(2)
+time.sleep(2)
 # Now fix the values
 camera.shutter_speed = camera.exposure_speed
 camera.exposure_mode = 'off'
